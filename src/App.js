@@ -4,7 +4,7 @@ import React from "react";
 import Home from "./pages/Home";
 import Navbar from "./component/layout/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap/dist/js/bootstrap.bundle";
 
 function App() {
   return (

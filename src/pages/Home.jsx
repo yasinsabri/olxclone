@@ -1,10 +1,11 @@
 import React from 'react'
+import Allcategories from '../component/Element/Allcategories'
 
 const Home = () => {
   return (
-    <div>
-      
-    </div>
+    <React.Fragment>
+      <Allcategories/>
+    </React.Fragment>
   )
 }
 

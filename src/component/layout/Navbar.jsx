@@ -8,7 +8,7 @@ const Navbar = () => {
           <a className="navbar-brand" href="/">
             <img src="asset/download (3).svg" alt="" className="logo" />
           </a>
-          {/* <button
+          <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
@@ -18,7 +18,7 @@ const Navbar = () => {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon" />
-          </button> */}
+          </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav mx-4">
               <li className="nav-item">
@@ -71,9 +71,10 @@ const Navbar = () => {
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
                   />
-                  <span className="input-group-text nav-search1-end" id="basic-addon2">
-                    
-                  </span>
+                  <span
+                    className="input-group-text nav-search1-end"
+                    id="basic-addon2"
+                  ></span>
                 </div>
               </form>
               <li className="nav-item mx-3">
@@ -82,14 +83,30 @@ const Navbar = () => {
                 </a>
               </li>
               <li className="nav-item mx-1">
-                <a className="nav-link " href="/">
-                  <img src="asset/color.svg" alt="" className="w-100" />
+                <a className="nav-link sell-image " href="/">
+                  <img src="asset/color.svg" alt="" className="w-100 " />
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
+      <div className="container-fluid mx-4">
+        <div className="row">
+          <div className="col-sm-12">
+            <div className="d-flex flex-wrap  gap-3 nav-end ">
+              <h6>All categories</h6>
+              <a href="/">Mobile Phones</a>
+              <a href="/">Cars</a>
+              <a href="/">Motorcycles</a>
+              <a href="/">Houses</a>
+              <a href="/">TV-Video-Audio</a>
+              <a href="/">Tablets</a>
+              <a href="/">Lands&Plots</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 };
