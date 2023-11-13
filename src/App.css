@@ -106,7 +106,35 @@
   
   max-height: 200px !important;
 }
-
+.card-details h6{
+ font-weight: 700;
+}
+.card-details p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+.footer-details h6{
+ font-weight: 700;
+ font-size: 15px;
+ margin-bottom: 35px;
+}
+.footer-details p{
+  font-weight: 700;
+  font-size: 10px;
+  color: rgb(95, 117, 119);
+  margin-top: -10px;
+ }
+ .footer-end{
+  background-color: #002f3433;
+ }
+ .footer-icons{
+  width: 10% ;
+ }
+ .color-end{
+  background-color: #002f34FF;
+  color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+ }
 @media only screen and (max-width: 600px) {
   .nav-search1 {
     width: 100px !important;

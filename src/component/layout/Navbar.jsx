@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <React.Fragment>
-      <nav className="navbar navbar-expand-lg mx-4">
+      <nav className="navbar navbar-expand-lg   mx-4">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img src="asset/download (3).svg" alt="" className="logo" />
@@ -35,7 +35,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <nav className="navbar navbar-expand-lg mx-4">
+      <nav className="navbar navbar-expand-lg  ">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Navbar from "./component/layout/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import Footer from "./component/layout/Footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route index path="/" element={<Home />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </React.Fragment>
   );
