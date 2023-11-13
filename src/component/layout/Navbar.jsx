@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             <img
-              src="asset/download (3).svg"
+              src="asset/olxlogo.svg"
               alt=""
               className="logo"
               width="70"
