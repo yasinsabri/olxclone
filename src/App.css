@@ -66,12 +66,17 @@
   border-radius: 5px !important;
   height: 50px;
 }
-.login-text {
+.logoo {
+  width: 15%;
+}
+.login-btn {
   color: black !important;
   font-size: 1.296rem !important;
   font-weight: 700 !important;
   font-family: Roboto, Helvetica, sans-serif !important;
   text-decoration: underline !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 .nav-search1-end {
   background-color: #002f34ff !important;
@@ -86,55 +91,90 @@
 .nav-end a:hover {
   color: #3a77ffff;
 }
-.all-images img{
+.all-images img {
   width: 60% !important;
-  
 }
-.all-images h6{
+.all-images h6 {
   text-align: center;
   font-size: 15px;
   margin-top: 5px;
   font-weight: 700;
-
 }
-.card{
+.card {
   max-width: 300px;
   max-height: 420px;
 }
-.card-img{
+.card-img {
   min-height: 200px;
-  
+
   max-height: 200px !important;
 }
-.card-details h6{
- font-weight: 700;
+.card-details h6 {
+  font-weight: 700;
 }
-.card-details p{
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+.card-details p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.footer-details h6{
- font-weight: 700;
- font-size: 15px;
- margin-bottom: 35px;
+.footer-details h6 {
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 35px;
 }
-.footer-details p{
+.footer-details p {
   font-weight: 700;
   font-size: 10px;
   color: rgb(95, 117, 119);
   margin-top: -10px;
- }
- .footer-end{
+}
+.footer-end {
   background-color: #002f3433;
- }
- .footer-icons{
-  width: 10% ;
- }
- .color-end{
-  background-color: #002f34FF;
+}
+.footer-icons {
+  width: 10%;
+}
+.color-end {
+  background-color: #002f34ff;
   color: whitesmoke;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  
- }
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.sell-navbar button {
+  border-radius: 50px;
+  padding: 7px 30px;
+  color: black !important;
+  border: solid 3px;
+  background: linear-gradient(rgb(216, 216, 53), rgb(59, 59, 207), aqua);
+}
+.modal-heading {
+  color: black;
+  font-weight: 700;
+
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.modal-btns button {
+  color: #090c14;
+  border: 4px solid;
+  width: 80%;
+  height: 50px;
+  margin-top: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.modal-btns button:hover {
+  border: 5px solid #002f34ff;
+}
+.modal-desc {
+  color: black;
+
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 1.792rem;
+
+  text-align: center;
+  margin-top: 1.6rem;
+}
+.modal-end p {
+  color: #090c14;
+  font-size: 12px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
 @media only screen and (max-width: 600px) {
   .nav-search1 {
     width: 100px !important;
@@ -143,7 +183,7 @@
   .nav-search1-end {
     margin-top: 10px !important;
   }
-  .sell-image{
+  .sell-image {
     width: 50% !important;
   }
 }

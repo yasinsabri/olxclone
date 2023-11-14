@@ -1,6 +1,9 @@
 import React from "react";
+import LoginModal from "../utils/LoginModal";
+
 
 const Navbar = () => {
+
   return (
     <React.Fragment>
       <nav className="navbar navbar-expand-lg   mx-4">
@@ -78,13 +81,14 @@ const Navbar = () => {
                 </div>
               </form>
               <li className="nav-item mx-3">
-                <a className="nav-link login-text" href="/">
-                  Login
+                <a className="nav-link login-text" >
+                  <LoginModal/>
+                  
                 </a>
               </li>
               <li className="nav-item mx-1">
-                <a className="nav-link sell-image " href="/">
-                  <img src="asset/color.svg" alt="" className="w-100 " />
+                <a className="nav-link sell-navbar " >
+                  <button> + SELL </button>
                 </a>
               </li>
             </ul>
