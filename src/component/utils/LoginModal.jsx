@@ -5,7 +5,7 @@ import React from "react";
 
 function LoginModal() {
   const [show, setShow] = useState(false);
-
+  const [loginEmail, setLoginEmail] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -27,16 +27,34 @@ function LoginModal() {
               The trusted community of buyers and sellers.
             </p>
           </div>
-          <div className="text-center modal-btns">
-            <button>Continue with Google</button>
-            <button>Continue with Facebook</button>
-            <button>Continue with Email</button>
-            <button>Continue with Phone</button>
-          </div>
+          {loginEmail ? ( 
+            <div className="">
+              <div className=" email-info d-flex gap-5">
+                <p>EMAIL</p>
+                <input type="email" name="" id="" />{" "}
+              </div>
+              <div className=" email-info d-flex gap-4 pt-2">
+                <p>Password</p>
+                <input type="password" name="" id="" />
+              </div>
+              <div className=" next-btn pt-3 text-center  ">
+                <button onClick={() => setLoginEmail(false)}>Back</button>
+              </div>
+            </div>
+          ) : (
+            <div className="text-center modal-btns">
+              <button>Continue with Google</button>
+              <button>Continue with Facebook</button>
+              <button onClick={() => setLoginEmail(true)}>
+                Continue with Email
+              </button>
+              <button>Continue with Phone</button>
+            </div>
+          )}
           <div className="text-center pt-4 modal-end">
             <p>
-              By continuing, you are accepting <br/> OLX Terms of use and Privacy
-              Policy
+              By continuing, you are accepting <br /> OLX Terms of use and
+              Privacy Policy
             </p>
           </div>
         </Modal.Body>
