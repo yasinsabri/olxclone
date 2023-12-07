@@ -8,6 +8,44 @@ function LoginModal() {
   const [loginEmail, setLoginEmail] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+
+  const validateEmail = () => {
+    // Add your email validation logic here
+    // For example, checking if it's a valid email address
+    if (!email.includes("@")) {
+      setEmailError("Invalid email address");
+      return false;
+    }
+    setEmailError("");
+    return true;
+  };
+
+  const validatePassword = () => {
+    // Add your password validation logic here
+    // For example, checking if it meets certain criteria
+    if (password.length < 6) {
+      setPasswordError("Password must be at least 6 characters");
+      return false;
+    }
+    setPasswordError("");
+    return true;
+  };
+
+  const handleNextClick = () => {
+    // Validate email and password
+    const isEmailValid = validateEmail();
+    const isPasswordValid = validatePassword();
+
+    // If both email and password are valid, proceed to the next step
+    if (isEmailValid && isPasswordValid) {
+      // Add your logic for the next step here
+      console.log("Email and Password are valid");
+    }
+  };
 
   return (
     <React.Fragment>
@@ -27,18 +65,31 @@ function LoginModal() {
               The trusted community of buyers and sellers.
             </p>
           </div>
-          {loginEmail ? ( 
+          {loginEmail ? (
             <div className="">
               <div className=" email-info d-flex gap-5">
                 <p>EMAIL</p>
-                <input type="email" name="" id="" />{" "}
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  onChange={(e) => setEmail(e.target.value)}
+                />{" "}
               </div>
+              {emailError && <p style={{ color: "red" }}>{emailError}</p>}
               <div className=" email-info d-flex gap-4 pt-2">
                 <p>Password</p>
-                <input type="password" name="" id="" />
+                <input
+                  type="password"
+                  name=""
+                  id=""
+                  onChange={(e) => setPassword(e.target.value)}
+                />
               </div>
+              {passwordError && <p style={{ color: "red" }}>{passwordError}</p>}
               <div className=" next-btn pt-3 text-center  ">
                 <button onClick={() => setLoginEmail(false)}>Back</button>
+                <button onClick={handleNextClick}>NEXT</button>
               </div>
             </div>
           ) : (
